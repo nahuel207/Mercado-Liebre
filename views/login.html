@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto" />
+    <link href="../public/style/main.css" rel="stylesheet" type="text/css" />
+    <meta content="user scalable-no, width=device-width, initial scale=1" />
+    <title>Iniciar Sesión</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="headerTop">
+            <img class="ml-logo" src="../public/images/logo.svg" alt="Logo">
+
+
+            <form action="home.html" class="barraBusqueda" method="GET">
+
+                <input class="buscar" type="text" name="Buscar aquí" id="" placeholder="Barra de busqueda">
+
+                <button type="submit" value="buscar" class="bloque" title="Enviar">buscar
+                </button>
+
+            </form>
+
+
+            <div>
+                <i class="fab fa-cc-visa"></i>
+                <a href="modoPago">colocar tarjeta de debito o credito</a>
+            </div>
+        </div>
+        <nav class="headerBottom">
+
+            <div class="posi">
+                <a href="Ofertas">Ofertas</a>
+                <a href="Tiendas Oficiales">Tiendas Oficiales</a>
+                <a href="Vender">Vender</a>
+                <a href="Ayuda">Ayuda</a>
+
+            </div>
+
+            <div class="menu">
+                <div>
+                    <i class="fas fa-user-circle" id="ico"></i>
+                    <a href="../views/register.html">Crea tu cuenta</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-hand-pointer" id="ico"></i>
+                    <a href="Ingresá">Ingresá</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-cash-register" id="ico"></i>
+                    <a href="Mis compras">Mis compras</a>
+                </div>
+            </div>
+
+
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+    <main>
+        
+        <form class="loginForm" action="home.html" method="GET">
+
+            <h4>Iniciar Sesión</h4>
+    
+            <div class="cuadroReg">
+    
+                <p>
+                    <label for="user">Nombre de Usuario:</label>
+                    <input class="controlls-login" type="text" name="Usuario" id="user" required>
+                </p>
+    
+                <p>
+                    <label for="clave">Contraseña:</label>
+                    <input class="controlls-login" type="password" name="Contraseña" id="clave" required>
+                </p>
+
+                <p>
+                    <button class="boton-login" type="submit">Iniciar Sesión</button>
+                </p>
+                
+            </div>
+        </form>
+    </main>
